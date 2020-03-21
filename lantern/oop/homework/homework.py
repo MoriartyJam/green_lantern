@@ -39,13 +39,23 @@ class Cat:
     """
 
     def __init__(self, age):
-        pass
+        self_age = age
+        age = Cat((raw_input("Enter Name"), int(raw_input("Enter Age"))))
+
+        print(p1.name)
+        print(p1.age)
+
+
+    def average_speed(self,killometers):
+        self.killometers = killometers
 
     def eat(self, product):
-        pass
+        self.product = product
 
     def _reduce_saturation_level(self, value):
-        pass
+        self.value = value
+        value = 50
+        return value
 
     def _increase_saturation_level(self, value):
         pass
