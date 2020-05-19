@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Goods</h2>
+
+<table style="width:100;">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Brand</th>
+    <th>Price</th>
+  </tr>
+    {% for good in goods %}
+  <tr>
+    <td>{{good.good_id}}</td>
+    <td>{{good.name}}</td>
+    <td>{{good.brand}}</td>
+    <td>{{good.price}}</td>
+  </tr>
+    {% endfor%}
+</table>
+{% endblock %}
