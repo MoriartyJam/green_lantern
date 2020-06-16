@@ -1,0 +1,12 @@
+.git/
+.gitignore
+.idea/
+.data/
+.pytest_cache/
+docker-compose*.yml
+django_orm/docker/containers
+django_orm/docker/scripts
+src/**/static/
+src/**/media/
+docker/envs/.**
+
