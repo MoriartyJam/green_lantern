@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+<H1><a href="/cars/list?dealer_id= {{dealer.id}}">{{ dealer.name }}</a></H1>
+<table style="width:100%; border-style:solid  1px;" >
+ <thead>
+ <tr>
+ <th style="text-transform: uppercase;">Status</th>
+ <th style="text-transform: uppercase;">Dealer ID</th>
+ <th style="text-transform: uppercase;">Price</th>
+ </tr>
+ </thead>
+  <tr>
+   {% for dil in list %}
+ <tr>
+ <td>{{dil.Status}}</td>
+ <td><a href="/cars/list?dealer_id= {{dealer.id}}">{{ dil.DealerID }}</a>{{dil.DealerID}}</td>
+ <td>{{dil.Price}}</td>
+</tr>
+ {% endfor %}
+  </tr>
+</table>
+
+</body>
+</html>

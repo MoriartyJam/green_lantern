@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+
+<table style="width:100%; border-style:solid  1px;" >
+ <thead>
+ <tr>
+ <th style="text-transform: uppercase;">Status</th>
+  <th style="text-transform: uppercase;">car id</th>
+ <th style="text-transform: uppercase;">Dealer ID</th>
+ <th style="text-transform: uppercase;">Price</th>
+ </tr>
+ </thead>
+  <tr>
+   {% for car in list %}
+ <tr>
+ <td>{{car.Status}}</td>
+  <td>{{car.carId}}</td>
+ <td>{{car.DealerID}}</td>
+ <td>{{car.Price}}</td>
+</tr>
+ {% endfor %}
+  </tr>
+</table>
+
+</body>
+</html>
